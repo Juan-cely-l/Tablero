@@ -1,19 +1,22 @@
 <html>
-<head>
-    <title>My website</title>
-</head>
-<body>
-<h1>Hello</h1>
-<div id="root"></div>
-<!-- Load React. -->
-<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin>
-</script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-        crossorigin></script>
-<!-- Load babel to translate JSX to js. -->
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-<!-- Load our React component. -->
-<script src="js/FirstComponent.jsx" type="text/babel"></script>
-</body>
-</html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js">
+        </script>
+        <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js">
+        </script>
+        <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+         <body>\
+            <div>
+                <h1>Tablero Interactivo </h1>
+                <script src="js/FirstComponent.jsx"></script>
+                <div id="root"></div>
+                <button id = "botonBorrar" type="button" onclick="erase()">BORRAR</button>
+                <button id = "botonColor" type="button" onclick="cambiarColor()">Cambiar Color</button>
+            </div>
+         </body>
+    <html/>
